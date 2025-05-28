@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>해외여행 | 드림투어</title>
+  <style>
+    body { font-family: 'Roboto', sans-serif; background: #f9fafc; margin: 0; }
+    header { background: #3a8dde; color: #fff; padding: 30px 0 18px 0; text-align: center; }
+    nav { margin: 18px 0 0 0; }
+    nav a { color: #fff; text-decoration: none; margin: 0 16px; font-size: 1.08rem; }
+    nav a:hover { border-bottom: 2px solid #fff; }
+    .nav-current {
+      font-weight: bold;
+      color: #ffb347;
+      border-bottom: 2px solid #ffb347;
+      cursor: default;
+      text-decoration: none;
+      margin: 0 16px;
+      font-size: 1.08rem;
+    }
+    .section { max-width: 1000px; margin: 38px auto; padding: 0 20px; }
+    .section h2 { color: #3a8dde; margin-bottom: 24px; }
+    .destinations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      justify-items: center;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 3px solid #3a8dde;
+    }
+    .card-body {
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .card-body h4 {
+      margin: 0 0 10px 0;
+      color: #3a8dde;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .card-body p {
+      margin: 0 0 14px 0;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .card-body .btn {
+      background: #ff7f50;
+      color: #fff;
+      border: none;
+      border-radius: 22px;
+      padding: 10px 26px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(255,127,80,0.4);
+    }
+    .card-body .btn:hover {
+      background: #e76b3c;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 38px;
+      font-size: 0.98rem;
+    }
+    @media (max-width: 800px) {
+      .destinations {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>드림투어 해외여행</h1>
+  <nav>
+    <a href="index.html">메인</a>
+    <a href="domestic.html">국내여행</a>
+    <a href="Travel2.html">해외여행</a>
+  </nav>
+
+
+</header>
+
+<section class="section">
+  <h2>인기 해외여행지</h2>
+  <div class="destinations">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="파리">
+      <div class="card-body">
+        <h4>파리</h4>
+        <p>에펠탑과 루브르, 낭만의 도시 프랑스 파리에서 잊지 못할 추억을!</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1465156799763-2c087c332922?auto=format&fit=crop&w=600&q=80" alt="로마">
+      <div class="card-body">
+        <h4>로마</h4>
+        <p>고대 유적과 예술, 이탈리아의 감성을 느낄 수 있는 로마 여행</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=600&q=80" alt="도쿄">
+      <div class="card-body">
+        <h4>도쿄</h4>
+        <p>전통과 현대가 공존하는 일본의 수도, 쇼핑과 미식의 천국</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="방콕">
+      <div class="card-body">
+        <h4>방콕</h4>
+        <p>화려한 야경과 맛있는 길거리 음식, 태국의 활기찬 수도</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e?auto=format&fit=crop&w=600&q=80" alt="뉴욕">
+      <div class="card-body">
+        <h4>뉴욕</h4>
+        <p>자유의 여신상, 센트럴파크, 세계의 중심 미국 뉴욕에서 특별한 경험을!</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="바르셀로나">
+      <div class="card-body">
+        <h4>바르셀로나</h4>
+        <p>가우디의 도시, 스페인 바르셀로나에서 예술과 열정을 느껴보세요</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80" alt="시드니">
+      <div class="card-body">
+        <h4>시드니</h4>
+        <p>오페라하우스와 아름다운 해변, 호주의 매력을 만끽하세요</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="발리">
+      <div class="card-body">
+        <h4>발리</h4>
+        <p>에메랄드빛 바다와 이국적인 리조트, 인도네시아의 대표 휴양지</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549887534-1a1a1a1a1a1a?auto=format&fit=crop&w=600&q=80" alt="하와이">
+      <div class="card-body">
+        <h4>하와이</h4>
+        <p>푸른 바다와 열대 자연, 세계인이 사랑하는 미국의 휴양지</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 드림투어 여행사. All rights reserved.
+</footer>
+</body>
+</html>
