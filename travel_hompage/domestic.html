@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>국내여행 | 드림투어</title>
+  <style>
+    body { font-family: 'Roboto', sans-serif; background: #f9fafc; margin: 0; }
+    header { background: #3a8dde; color: #fff; padding: 30px 0 18px 0; text-align: center; }
+    nav { margin: 18px 0 0 0; }
+    nav a { color: #fff; text-decoration: none; margin: 0 16px; font-size: 1.08rem; }
+    nav a:hover { border-bottom: 2px solid #fff; }
+    .section { max-width: 1000px; margin: 38px auto; padding: 0 20px; }
+    .section h2 { color: #3a8dde; margin-bottom: 24px; }
+    .destinations {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+      justify-items: center;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+      overflow: hidden;
+      width: 280px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-bottom: 3px solid #3a8dde;
+    }
+    .card-body {
+      padding: 18px 16px;
+      text-align: center;
+    }
+    .card-body h4 {
+      margin: 0 0 10px 0;
+      color: #3a8dde;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+    .card-body p {
+      margin: 0 0 14px 0;
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .card-body .btn {
+      background: #ff7f50;
+      color: #fff;
+      border: none;
+      border-radius: 22px;
+      padding: 10px 26px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      font-weight: 600;
+      box-shadow: 0 4px 12px rgba(255,127,80,0.4);
+    }
+    .card-body .btn:hover {
+      background: #e76b3c;
+    }
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 18px 0;
+      margin-top: 38px;
+      font-size: 0.98rem;
+    }
+    @media (max-width: 800px) {
+      .destinations {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <h1>드림투어 국내여행</h1>
+  <nav>
+    <a href="index.html">메인</a>
+    <a href="domestic.html">국내여행</a>
+    <a href="Travel2.html">해외여행</a>
+  </nav>
+
+
+
+</header>
+
+<section class="section">
+  <h2>인기 국내여행지</h2>
+  <div class="destinations">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="제주도">
+      <div class="card-body">
+        <h4>제주도</h4>
+        <p>청정 자연과 맛집, 액티비티까지! 인기 패키지/자유여행</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=600&q=80" alt="강원도">
+      <div class="card-body">
+        <h4>강원도</h4>
+        <p>설악산, 동해, 평창 등 자연과 레저를 동시에!</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?auto=format&fit=crop&w=600&q=80" alt="남도">
+      <div class="card-body">
+        <h4>남도 여행</h4>
+        <p>전주, 여수, 순천 등 남도의 멋과 맛을 경험하세요</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1549887534-1a1a1a1a1a1a?auto=format&fit=crop&w=600&q=80" alt="부산">
+      <div class="card-body">
+        <h4>부산</h4>
+        <p>해운대, 광안리 해변과 맛집 탐방의 도시</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="경주">
+      <div class="card-body">
+        <h4>경주</h4>
+        <p>역사와 문화가 살아있는 신라 천년의 고도</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=600&q=80" alt="전주">
+      <div class="card-body">
+        <h4>전주</h4>
+        <p>한옥마을과 맛있는 전통 음식의 도시</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?auto=format&fit=crop&w=600&q=80" alt="속초">
+      <div class="card-body">
+        <h4>속초</h4>
+        <p>동해 바다와 설악산의 자연을 만끽하세요</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=600&q=80" alt="여수">
+      <div class="card-body">
+        <h4>여수</h4>
+        <p>밤바다와 해산물, 낭만 가득한 항구 도시</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=600&q=80" alt="담양">
+      <div class="card-body">
+        <h4>담양</h4>
+        <p>대나무 숲과 자연 속 힐링 여행지</p>
+        <button class="btn">상세보기</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 드림투어 여행사. All rights reserved.
+</footer>
+</body>
+</html>
